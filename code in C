@@ -1,0 +1,88 @@
+#include<stdio.h> 
+#include<stdlib.h>
+int  CheckForWin();
+void Drawboard();
+void mark_board();
+int t=1;
+char a[10]={'0','1','2','3','4','5','6','7','8','9'};
+
+void Drawboard()
+{
+	printf("\t\t\tTic-Tac-Toe\n\n\n");
+    printf("\t\t player 1== X   player 2== O\n\n\n");
+	printf("\n\t\t\t|\t|");
+	printf("\n\t\t    %c   |   %c   |   %c   ",a[1],a[2],a[3]);
+	printf("\n\t\t\t|\t|\t");
+	printf("\n\t\t________|_______|_______");
+	printf("\n\t\t\t|\t|");
+	printf("\n\t\t    %c   |   %c   |   %c   ",a[4],a[5],a[6]);
+	printf("\n\t\t\t|\t|\t");
+	printf("\n\t\t________|_______|_______");
+	printf("\n\t\t\t|\t|");
+	printf("\n\t\t    %c   |   %c   |   %c   ",a[7],a[8],a[9]);
+	printf("\n\t\t\t|\t|\t");
+	printf("\n\t\t\t|\t|\t\n");
+}
+void mark_board()
+{
+  int n;
+  h:
+  printf("select your move");
+  scanf("%d",&n);
+    if(n>9||n<1||(a[n]=='O'||a[n]=='X'))
+    {
+    printf("Invalid move");
+    goto h;
+	}
+	if(t!=9)
+	system("cls");
+    if(t%2==0)
+    a[n]='O';
+    else
+    a[n]='X';
+}
+   int  CheckForWin()
+   {
+   if((a[1]=='X'&&a[2]=='X'&&a[3]=='X')||(a[4]=='X'&&a[5]=='X'&&a[6]=='X')||(a[7]=='X'&&a[8]=='X'&&a[9]=='X')||
+       (a[1]=='X'&&a[4]=='X'&&a[7]=='X')||(a[2]=='X'&&a[5]=='X'&&a[8]=='X')||(a[3]=='X'&&a[6]=='X'&&a[9]=='X')||
+       (a[1]=='X'&&a[5]=='X'&&a[9]=='X')||(a[3]=='X'&&a[5]=='X'&&a[7]=='X'))
+	   {
+   	
+	   system("cls");	
+	   Drawboard();
+	   printf("------player 1 won--------");
+	   t=9;
+       
+      }
+      else if
+	  ((a[1]=='O'&&a[2]=='O'&&a[3]=='O')||(a[4]=='O'&&a[5]=='O'&&a[6]=='O')||(a[7]=='O'&&a[8]=='O'&&a[9]=='O')||
+       (a[1]=='O'&&a[4]=='O'&&a[7]=='O')||(a[2]=='O'&&a[5]=='O'&&a[8]=='O')||(a[3]=='O'&&a[6]=='O'&&a[9]=='O')||
+       (a[1]=='O'&&a[5]=='O'&&a[9]=='O')||(a[3]=='O'&&a[5]=='O'&&a[7]=='O'))
+	   {
+	   	system("cls");
+	    Drawboard();
+   	    printf("------player 2 won-------");
+   	    t=9;
+      }
+  
+   
+   else if ((a[1]=='X'||a[1]=='O')&&(a[2]=='x'||a[2]=='O')&&(a[3]=='X'||a[3]=='O')&&
+            (a[4]=='X'||a[4]=='O')&&(a[5]=='X'||a[5]=='O')&&(a[6]=='X'||a[6]=='O')&&
+			(a[7]=='X'||a[7]=='O')&&(a[8]=='X'||a[8]=='O')&&(a[9]=='X'||a[9]=='O'))
+	{
+	{
+	system("cls");
+	Drawboard();
+	printf("------DRAW-------");
+    }   
+}
+}
+int main()
+{ 
+    for(t=1;t<=9;t++)
+    {
+	Drawboard();
+	mark_board();
+    CheckForWin();
+   }
+}
