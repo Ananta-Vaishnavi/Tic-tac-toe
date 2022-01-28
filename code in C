@@ -9,7 +9,7 @@ char p1[100],p2[100];
 char a[10]={'0','1','2','3','4','5','6','7','8','9'};
 int main()
 {   printf("\t\t\tTic-Tac-Toe\n\n\n");
-    printf("\t\t\t----Player 1==X----\n\t\t\t----Player 2==Y----\n\n\n");
+    printf("\t\t\t----Player 1==X----\n\t\t\t----Player 2==O----\n\n\n");
     printf("\n\n\t\t ----NAME OF PLAYER 1 (____X____) ----\n\t\t ====> ");
     gets(p1);
     printf("\n\t\t ----NAME OF PLAYER 2 (____O____) ----\n\t\t ====> ");
@@ -116,3 +116,4 @@ printf("\n\t\t\t----RULES----\n[1] Each player take their turns to put their mar
 printf("\n[2] The first player to get 3 of her marks in a row (up, down, across, or \n    diagonally) is the winner.");
 printf("\n[3] When all 9 squares are full, the game is over. If no player has 3 marks\n    in a row, the game ends in a tie a.k.a Draw.\n\n");
 }
+
