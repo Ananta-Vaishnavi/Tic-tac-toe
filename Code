@@ -2,8 +2,9 @@
 int  CheckForWin();
 void Drawboard();
 void mark_board();
-extern int t;
-extern char a[10]={'0','1','2','3','4','5','6','7','8','9'};
+int t=1;
+char a[10]={'0','1','2','3','4','5','6','7','8','9'};
+
 void Drawboard()
 {
 	printf("\t\t\tTic-Tac-Toe\n\n\n");
@@ -19,25 +20,29 @@ void Drawboard()
 	printf("\n\t\t\t|\t|");
 	printf("\n\t\t    %c   |   %c   |   %c   ",a[7],a[8],a[9]);
 	printf("\n\t\t\t|\t|\t");
-	printf("\n\t\t\t|\t|\t");
+	printf("\n\t\t\t|\t|\t\n");
 }
 void mark_board()
 {
   int n;
-  num: scanf("%d",&n);
-  t++;
-  if(n<1||n>9)
-  {
-  	printf("Invalid move");
-  	goto num;
-  	if(t%2==0)
+  h:
+  printf("select your move");
+  scanf("%d",&n);
+    if(n>9||n<1||(a[n]=='X'||a[n]=='O'))
+    {
+    printf("Invalid move");
+    goto h;
+	}
+    if(t%2==0)
     a[n]='O';
     else
     a[n]='X';
-  }
+    
+  
 }
 main()
 {
 	Drawboard();
-	m
+	mark_board();
+	Drawboard();
 }
