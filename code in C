@@ -113,7 +113,7 @@ void Rules()
 {
 system("cls");
 printf("\n\t\t\t----RULES----\n[1] Each player take their turns to put their marks in empty squares \n    by pressing the number they want to put them in.\n");
-printf("\n[2] The first player to get 3 of her marks in a row (up, down, across, or \n    diagonally) is the winner.");
+printf("\n[2] The first player to get 3 of her marks in a row (up, down, across, or \n    diagonally) is the winner.\n");
 printf("\n[3] When all 9 squares are full, the game is over. If no player has 3 marks\n    in a row, the game ends in a tie a.k.a Draw.\n\n");
 }
 
