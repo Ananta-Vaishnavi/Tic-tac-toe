@@ -89,7 +89,7 @@ void mark_board()
    }
   printf(": ====> ");
   scanf("%s",&nu);
-  if(nu[0]&&nu[1]<=57&&nu[0]&&nu[1]>=48)
+  if(nu[0]&&nu[1]<=57&&nu[0]&&nu[1]>=47)
   {
   	printf("Invalid Move\n");
     goto h;
