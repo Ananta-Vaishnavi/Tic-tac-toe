@@ -1,6 +1,7 @@
 /*Why this update?
 1) The program will not be unstable even if you type a letter instead of number and consider it as a mistake
 2) This program will consider the first number even if you accidentally press another number too
+*/
 #include<stdio.h> 
 #include<stdlib.h>
 int  CheckForWin();
