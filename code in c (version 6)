@@ -1,6 +1,6 @@
 /*What is new
 if any of the plyers have a difference of 2 in their score the game is completed
-and the winner is declared
+and the winner is declared*/
 #include<stdio.h> 
 #include<stdlib.h>
 #include<string.h>
