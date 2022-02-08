@@ -23,7 +23,7 @@ int main()
     printf("\n\t\t ----NAME OF PLAYER 2 (____O____) ----\n\t\t ====> ");
     gets(p2);
     char yes[7];
-    printf("==>  %s  ==  X\n==>  %s==  O\nDo you want to contiue with this or shall we exchange---- Press 'y' to change and 'n' to continue...",p1,p2);
+    printf("==>  %s  ==  X\n==>  %s  ==  O\nDo you want to contiue with this or shall we exchange---- Press 'y' to change and 'n' to continue...",p1,p2);
     scanf("%s",&yes);
     if((yes[0]=='Y')||(yes[0]=='y'))
     {
