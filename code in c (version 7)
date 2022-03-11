@@ -1,3 +1,6 @@
+/*what's new
+Added a bg colour and font colour
+*/
 #include<stdio.h> 
 #include<stdlib.h>
 #include<string.h>
